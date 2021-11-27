@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Your Nationality:</label>
+    <input type="text" id="nt">
+    <br>
+    <label>Enter Your Age:</label>
+    <input type="text" id="ag">
+    <br>
+    <button onclick="check()">Show</button>
+
+    <script>
+        function check() {
+            var nation = document.getElementById("nt").value;
+            var age = document.getElementById("ag").value;
+            if (nation == "pakistani" && age >= 18) {
+                //for redirecting the page
+                location.href = "vote.html";
+            } else {
+                alert("Your are not eligible for giving the vote");
+            }
+        }
+        /*
+        username: pny123
+        phone: 12345
+        password: admin123
+        */
+    </script>
+</body>
+
+</html>
